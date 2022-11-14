@@ -2,16 +2,20 @@ package com.kelin.mvvmlight.zhihu;
 
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
+
 import android.graphics.Color;
 import android.os.Bundle;
+
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.navigation.NavigationView;
+
 import androidx.core.view.GravityCompat;
 import androidx.viewpager.widget.ViewPager;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.widget.Toolbar;
+
 import android.text.SpannableString;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -31,7 +35,7 @@ public class MainActivity extends RxAppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ViewDataBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        ViewDataBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main_layout);
         binding.setVariable(com.kelin.mvvmlight.zhihu.BR.viewModel, new MainViewModel(this));
         CollapsingToolbarLayout collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

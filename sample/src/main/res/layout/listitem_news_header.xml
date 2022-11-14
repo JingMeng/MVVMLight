@@ -6,6 +6,8 @@
         <variable
             name="viewModel"
             type="com.kelin.mvvmlight.zhihu.news.NewItemViewModel" />
+
+        <import type="android.view.View" />
     </data>
 
     <RelativeLayout

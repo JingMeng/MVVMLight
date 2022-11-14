@@ -8,6 +8,8 @@
         <variable
             name="viewModel"
             type="com.kelin.mvvmlight.zhihu.MainViewModel" />
+
+        <import type="android.view.View" />
     </data>
 
     <androidx.drawerlayout.widget.DrawerLayout

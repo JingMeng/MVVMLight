@@ -9,6 +9,8 @@
             type="com.kelin.mvvmlight.zhihu.TopItemViewModel" />
 
         <import type="com.kelin.mvvmlight.zhihu.R" />
+
+        <import type="android.view.View" />
     </data>
 
     <FrameLayout
