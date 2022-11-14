@@ -2,15 +2,13 @@ package com.kelin.mvvmlight.zhihu;
 
 import android.app.Activity;
 import android.content.Context;
-import android.databinding.ObservableArrayList;
-import android.databinding.ObservableList;
+import androidx.databinding.ObservableArrayList;
+import androidx.databinding.ObservableList;
 
 import com.kelin.mvvmlight.base.ViewModel;
 import com.kelin.mvvmlight.messenger.Messenger;
 import com.kelin.mvvmlight.zhihu.news.NewsViewModel;
 import com.kelin.mvvmlight.zhihu.news.TopNewsService;
-
-import java.util.concurrent.TimeUnit;
 
 import me.tatarka.bindingcollectionadapter.ItemView;
 import rx.Observable;

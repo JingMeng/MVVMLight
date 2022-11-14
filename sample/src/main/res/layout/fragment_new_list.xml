@@ -26,7 +26,7 @@
             android:visibility="@{viewModel.viewStyle.progressRefreshing?View.VISIBLE:View.GONE}" />
 
 
-        <android.support.v4.widget.SwipeRefreshLayout
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/swipe_refresh_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -35,7 +35,7 @@
             bind:layout_behavior="@string/appbar_scrolling_view_behavior"
             bind:onRefreshCommand="@{viewModel.onRefreshCommand}">
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -45,10 +45,10 @@
                 bind:layout_behavior="@string/appbar_scrolling_view_behavior"
                 bind:onLoadMoreCommand="@{viewModel.onLoadMoreCommand}">
 
-            </android.support.v7.widget.RecyclerView>
+            </androidx.recyclerview.widget.RecyclerView>
 
 
-        </android.support.v4.widget.SwipeRefreshLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 
     </FrameLayout>

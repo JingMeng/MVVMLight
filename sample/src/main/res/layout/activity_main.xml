@@ -10,7 +10,7 @@
             type="com.kelin.mvvmlight.zhihu.MainViewModel" />
     </data>
 
-    <android.support.v4.widget.DrawerLayout
+    <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,21 +18,21 @@
         tools:openDrawer="start">
 
 
-        <android.support.design.widget.CoordinatorLayout
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
             android:fitsSystemWindows="true"
             tools:context="com.kelin.mvvmlight.zhihu.MainActivity">
 
-            <android.support.design.widget.AppBarLayout
+            <com.google.android.material.appbar.AppBarLayout
                 android:id="@+id/appBarLayout"
                 android:layout_width="match_parent"
                 android:layout_height="256dp"
                 android:fitsSystemWindows="true"
                 android:theme="@style/AppTheme.AppBarOverlay">
 
-                <android.support.design.widget.CollapsingToolbarLayout
+                <com.google.android.material.appbar.CollapsingToolbarLayout
                     android:id="@+id/collapsing_toolbar"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -42,7 +42,7 @@
                     app:expandedTitleMarginStart="48dp"
                     app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-                    <android.support.v4.view.ViewPager
+                    <androidx.viewpager.widget.ViewPager
                         android:id="@+id/viewpager"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -62,7 +62,7 @@
                         app:pageColor="#88888888"
                         app:strokeColor="#88888888" />
 
-                    <android.support.v7.widget.Toolbar
+                    <androidx.appcompat.widget.Toolbar
                         android:id="@+id/toolbar"
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
@@ -70,10 +70,10 @@
                         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
                     <!--android:background="?attr/colorPrimary"-->
 
-                </android.support.design.widget.CollapsingToolbarLayout>
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
 
 
-            </android.support.design.widget.AppBarLayout>
+            </com.google.android.material.appbar.AppBarLayout>
 
 
             <RelativeLayout
@@ -90,9 +90,9 @@
                     android:layout_height="match_parent" />
             </RelativeLayout>
 
-        </android.support.design.widget.CoordinatorLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-        <android.support.design.widget.NavigationView
+        <com.google.android.material.navigation.NavigationView
             android:id="@+id/nav_view"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -102,6 +102,6 @@
             app:headerLayout="@layout/nav_header_main"
             app:menu="@menu/activity_main_drawer" />
 
-    </android.support.v4.widget.DrawerLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
 
 </layout>

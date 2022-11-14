@@ -2,7 +2,7 @@ package com.kelin.mvvmlight.zhihu;
 
 import android.content.Context;
 import android.content.Intent;
-import android.databinding.ObservableField;
+import androidx.databinding.ObservableField;
 
 import com.kelin.mvvmlight.base.ViewModel;
 import com.kelin.mvvmlight.command.ReplyCommand;

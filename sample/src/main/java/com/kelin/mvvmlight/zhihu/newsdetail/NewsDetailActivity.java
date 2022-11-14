@@ -1,10 +1,10 @@
 package com.kelin.mvvmlight.zhihu.newsdetail;
 
-import android.databinding.DataBindingUtil;
-import android.databinding.ViewDataBinding;
+import androidx.databinding.DataBindingUtil;
+import androidx.databinding.ViewDataBinding;
 import android.os.Bundle;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+import androidx.appcompat.widget.Toolbar;
 import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;

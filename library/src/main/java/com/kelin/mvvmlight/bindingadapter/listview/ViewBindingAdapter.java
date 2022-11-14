@@ -1,6 +1,6 @@
 package com.kelin.mvvmlight.bindingadapter.listview;
 
-import android.databinding.BindingAdapter;
+import androidx.databinding.BindingAdapter;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.AdapterView;

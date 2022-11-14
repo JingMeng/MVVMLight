@@ -1,10 +1,10 @@
 package com.kelin.mvvmlight.zhihu.news;
 
 import android.app.Fragment;
-import android.databinding.ObservableArrayList;
-import android.databinding.ObservableBoolean;
-import android.databinding.ObservableList;
-import android.support.v4.util.Pair;
+import androidx.databinding.ObservableArrayList;
+import androidx.databinding.ObservableBoolean;
+import androidx.databinding.ObservableList;
+import androidx.core.util.Pair;
 import android.widget.Toast;
 
 import com.kelin.mvvmlight.BR;

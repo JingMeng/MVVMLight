@@ -2,8 +2,8 @@ package com.kelin.mvvmlight.zhihu.news;
 
 import android.content.Context;
 import android.content.Intent;
-import android.databinding.ObservableField;
-import android.databinding.ObservableInt;
+import androidx.databinding.ObservableField;
+import androidx.databinding.ObservableInt;
 
 import com.kelin.mvvmlight.base.ViewModel;
 import com.kelin.mvvmlight.command.ReplyCommand;

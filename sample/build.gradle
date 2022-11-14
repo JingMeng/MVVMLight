@@ -1,14 +1,13 @@
 apply plugin: 'com.android.application'
-apply plugin: 'me.tatarka.retrolambda'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 28
     buildToolsVersion "23.0.2"
 
     defaultConfig {
         applicationId "com.kelin.mvvmlight.zhihu"
         minSdkVersion 15
-        targetSdkVersion 23
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
     }
@@ -31,11 +30,11 @@ dependencies {
     compile project(':library')
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.3.0'
-    compile('com.android.support:support-v4:23.3.0') {
+    compile 'androidx.appcompat:appcompat:1.0.0'
+    compile('androidx.legacy:legacy-support-v4:1.0.0') {
         force = true
     }
-    compile 'com.android.support:design:23.3.0'
+    compile 'com.google.android.material:material:1.0.0'
     compile 'com.trello:rxlifecycle:0.5.0'
     // If you want pre-written Activities and Fragments you can subclass as providers
     compile 'com.trello:rxlifecycle-components:0.5.0'

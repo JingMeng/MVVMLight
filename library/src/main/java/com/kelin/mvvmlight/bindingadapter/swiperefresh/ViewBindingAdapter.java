@@ -1,7 +1,7 @@
 package com.kelin.mvvmlight.bindingadapter.swiperefresh;
 
-import android.databinding.BindingAdapter;
-import android.support.v4.widget.SwipeRefreshLayout;
+import androidx.databinding.BindingAdapter;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.kelin.mvvmlight.command.ReplyCommand;
 

@@ -14,7 +14,7 @@ import com.kelin.mvvmlight.command.ReplyCommand;
 public final class ViewBindingAdapter {
 
 
-    @android.databinding.BindingAdapter({"requestFocus"})
+    @androidx.databinding.BindingAdapter({"requestFocus"})
     public static void requestFocusCommand(EditText editText, final Boolean needRequestFocus) {
         if (needRequestFocus) {
             editText.setFocusableInTouchMode(true);
@@ -30,7 +30,7 @@ public final class ViewBindingAdapter {
     }
 
 
-    @android.databinding.BindingAdapter(value = {"beforeTextChangedCommand", "onTextChangedCommand", "afterTextChangedCommand"}, requireAll = false)
+    @androidx.databinding.BindingAdapter(value = {"beforeTextChangedCommand", "onTextChangedCommand", "afterTextChangedCommand"}, requireAll = false)
     public static void editTextCommand(EditText editText,
                                        final ReplyCommand<TextChangeDataWrapper> beforeTextChangedCommand,
                                        final ReplyCommand<TextChangeDataWrapper> onTextChangedCommand,
