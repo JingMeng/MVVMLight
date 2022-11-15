@@ -1,18 +1,29 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 android {
-    compileSdkVersion 28
+    compileSdkVersion 33
     buildToolsVersion "23.0.2"
 
     defaultConfig {
         applicationId "com.kelin.mvvmlight.zhihu"
         minSdkVersion 15
-        targetSdkVersion 28
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
     }
 
-    dataBinding {
-        enabled true
+    packagingOptions {
+        exclude 'android/databinding/DataBinderMapper.java'
+        exclude 'android/databinding/DataBindingComponent.java'
+        exclude 'android/databinding/DynamicUtil.java'
+    }
+
+//    dataBinding {
+//        enabled true
+//    }
+    buildFeatures {
+        dataBinding = true
     }
     buildTypes {
         release {
@@ -24,23 +35,24 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
-    compile project(':library')
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    api project(':library')
+    api fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'androidx.appcompat:appcompat:1.0.0'
-    compile('androidx.legacy:legacy-support-v4:1.0.0') {
-        force = true
-    }
-    compile 'com.google.android.material:material:1.0.0'
-    compile 'com.trello:rxlifecycle:0.5.0'
+    api 'androidx.appcompat:appcompat:1.0.0'
+    api 'com.google.android.material:material:1.0.0'
+    api 'com.trello:rxlifecycle:0.5.0'
     // If you want pre-written Activities and Fragments you can subclass as providers
-    compile 'com.trello:rxlifecycle-components:0.5.0'
-    compile 'com.squareup.retrofit2:retrofit:2.0.1'
-    compile 'com.squareup.retrofit2:converter-gson:2.0.1'
-    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.1'
-    compile 'com.facebook.fresco:fresco:0.9.0+'
-    compile 'com.mcxiaoke.viewpagerindicator:library:2.4.1'
+    api 'com.trello:rxlifecycle-components:0.5.0'
+    api 'com.squareup.retrofit2:retrofit:2.0.1'
+    api 'com.squareup.retrofit2:converter-gson:2.0.1'
+    api 'com.squareup.retrofit2:adapter-rxjava:2.0.1'
+    api 'com.facebook.fresco:fresco:0.9.0+'
+    api 'com.mcxiaoke.viewpagerindicator:library:2.4.1'
+    kapt "androidx.databinding:databinding-compiler:$agp_version"
 }
