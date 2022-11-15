@@ -10,6 +10,12 @@
             type="com.kelin.mvvmlight.zhihu.MainViewModel" />
 
         <import type="android.view.View" />
+
+        <import type="androidx.viewpager.widget.ViewPager"/>
+        <import type="androidx.drawerlayout.widget.DrawerLayout"/>
+        <import type="androidx.coordinatorlayout.widget.CoordinatorLayout"/>
+        <import type="com.google.android.material.appbar.AppBarLayout"/>
+        <import type="com.viewpagerindicator.CirclePageIndicator"/>
     </data>
 
     <androidx.drawerlayout.widget.DrawerLayout

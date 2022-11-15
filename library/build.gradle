@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-
 android {
     compileSdkVersion 28
     buildToolsVersion "23.0.2"
@@ -21,17 +20,21 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility 1.8
-        targetCompatibility 1.8
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
     }
+
 }
 
 dependencies {
     compile 'androidx.appcompat:appcompat:1.0.0'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'io.reactivex:rxandroid:1.1.0'
-    compile 'me.tatarka.bindingcollectionadapter:bindingcollectionadapter:1.1.0'
-    compile 'me.tatarka.bindingcollectionadapter:bindingcollectionadapter-recyclerview:1.1.0'
+//    https://github.com/evant/binding-collection-adapter
+//    compile 'me.tatarka.bindingcollectionadapter:bindingcollectionadapter:1.1.0'
+//    compile 'me.tatarka.bindingcollectionadapter:bindingcollectionadapter-recyclerview:1.1.0'
+    implementation 'me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:1.2.0'
+    implementation 'me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:1.2.0'
     compile 'com.facebook.fresco:fresco:0.9.0+'
     testCompile 'junit:junit:4.12'
 }
